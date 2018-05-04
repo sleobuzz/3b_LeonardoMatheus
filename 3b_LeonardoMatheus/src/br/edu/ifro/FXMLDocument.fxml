@@ -6,9 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="418.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Button fx:id="btnSoma" layoutX="246.0" layoutY="153.0" onAction="#soma" text="Soma" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="25.0" layoutY="55.0" text="Numero1" />
+      <Label layoutX="25.0" layoutY="137.0" text="Numero1" />
+      <Label layoutX="25.0" layoutY="207.0" text="Numero1" />
+      <TextField fx:id="txt1" layoutX="25.0" layoutY="72.0" onAction="#txt1" />
+      <TextField fx:id="txt2" layoutX="25.0" layoutY="153.0" onAction="#txt2" />
+      <TextField fx:id="txt3" layoutX="25.0" layoutY="224.0" />
     </children>
 </AnchorPane>
