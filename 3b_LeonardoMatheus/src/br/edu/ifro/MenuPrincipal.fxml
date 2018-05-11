@@ -17,5 +17,15 @@
       <TextField fx:id="txtN2" layoutX="45.0" layoutY="185.0" />
       <TextField fx:id="txtResultado" layoutX="45.0" layoutY="272.0" />
       <Button fx:id="btnSomar" layoutX="241.0" layoutY="272.0" mnemonicParsing="false" onAction="#somar" text="somar" />
+      <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="467.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
