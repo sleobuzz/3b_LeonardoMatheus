@@ -10,31 +10,38 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javax.swing.JButton;
 
 /**
  *
  * @author 05015429223
  */
-public class FXMLDocumentController implements Initializable {
+public class MenuPrincipalController implements Initializable {
+
     
     @FXML
-    private TextField txt1, txt2, txtResultado;
+private TextField txtN1, txtN2, txtN3, txtResultado;
     
     @FXML
-    private JButton btnSoma;
-    
+private Button btnSomar;
+
+   
     @FXML
-    private void soma(ActionEvent event) {
-    Double num1 = Double.parseDouble(txt1.getText());   
-    Double num2 = Double.parseDouble(txt2.getText());
-    
-    Double resultado = num1 + num2 ;
-    
-    txtResultado.setText(resultado.toString());
+    private Label lblN1, lblN2, lblN3;
 
 
+    @FXML
+    private void somar(ActionEvent event) {
+     Double num1= Double.parseDouble(txtN1.getText());
+     Double num2= Double.parseDouble(txtN2.getText());
+     Double result;
+     result = num1 + num2;
+    txtResultado.setText(result.toString());
+      //num2
+     //  result = num1 + num2 + num3;
+      
     }
     
     @Override
