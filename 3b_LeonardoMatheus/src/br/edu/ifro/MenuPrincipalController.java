@@ -37,7 +37,27 @@ private Button btnSomar;
     @FXML
     private Label label;
    
+@FXML
+   private void abrirCadastroAluno(ActionEvent event) {
+         try{
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("LeonardoMatheus.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(),900,682);
+            Stage stage = new Stage();
+    stage.setTitle("Cadastrar aluno");
+    stage.setScene(scene);
+    stage.show();
+}
+catch(IOException e){
 
+}
+    }
+    
+    @FXML
+    private void fecharProjeto(ActionEvent event){
+    }
+    
+  
 
 
     @FXML
@@ -56,23 +76,5 @@ private Button btnSomar;
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
-   private void abrirCadastroAluno(ActionEvent event) {
-         try{
-            FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("LeonardoMatheus.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(),900,682);
-            Stage stage = new Stage();
-    stage.setTitle("Cadastrar aluno");
-    stage.setScene(scene);
-    stage.show();
 }
-catch(IOException e){
-
-}
-    }
-    
-    private void fecharProjeto(ActionEvent event){
-    }
-    
-}  
     

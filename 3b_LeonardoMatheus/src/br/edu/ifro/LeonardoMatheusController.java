@@ -36,13 +36,15 @@ public class LeonardoMatheusController implements Initializable {
 
     @FXML
     private void salvar(ActionEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory(aula);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
         EntityManager em = emf.createEntityManager();
         
         LeonardoMatheus aluno1 = new LeonardoMatheus(); 
         aluno1.setNome(txtNome.getText());
         
-        
+        em.getTransaction().begin();
+        em.persist(aluno1);
+        em.getTransaction().commit();
     }
 
     @FXML
